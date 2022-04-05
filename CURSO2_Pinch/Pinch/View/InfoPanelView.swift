@@ -2,8 +2,8 @@
 //  InfoPanelView.swift
 //  Pinch
 //
-//  Created by skynet on 5/4/22.
-//  https://credo.academy
+//  Created by EstePandaOne on 5/4/22.
+//
 
 import SwiftUI
 
