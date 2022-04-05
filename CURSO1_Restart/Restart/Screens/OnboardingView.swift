@@ -139,7 +139,7 @@ struct OnboardingView: View {
             }
         }
             .onAppear(perform: {
-                    isAnimating = true
+            isAnimating = true
         })
     }
 }

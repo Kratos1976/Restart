@@ -66,8 +66,8 @@ struct HomeView: View {
         }
         .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.7, execute: {
-                isAnimating = true
-            })
+                    isAnimating = true
+                })
         })
     }
 }
