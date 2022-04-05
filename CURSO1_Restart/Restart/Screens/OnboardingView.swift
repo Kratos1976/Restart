@@ -15,6 +15,11 @@ struct OnboardingView: View {
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffset: CGFloat = 0
     @State private var isAnimating: Bool = false
+    @State private var imageOffset: CGSize = .zero
+    @State private var indicatorOpacity: Double = 1.0
+    @State private var textTitle: String = "Share."
+
+    let hapticFeeback = UINotificationFeedbackGenerator()
 
     // MARK: - BODY
 
@@ -119,9 +124,12 @@ struct OnboardingView: View {
                                 .onEnded { _ in
                                 withAnimation(Animation.easeOut(duration: 0.5)) {
                                     if buttonOffset > buttonWidth / 2 {
+                                        hapticFeeback.notificationOccurred(.success)
+                                        playSound(sound: "chimeup", type: "mp3")
                                         buttonOffset = buttonWidth - 80
                                         isOnboardingViewActive = false
                                     } else {
+                                        hapticFeeback.notificationOccurred(.warning)
                                         buttonOffset = 0
                                     }
                                 }
@@ -141,6 +149,7 @@ struct OnboardingView: View {
             .onAppear(perform: {
             isAnimating = true
         })
+            .preferredColorScheme(.dark)
     }
 }
 
