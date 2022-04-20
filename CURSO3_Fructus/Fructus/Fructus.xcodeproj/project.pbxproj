@@ -22,6 +22,8 @@
 		D317C1DB27FF9EAB00464C1B /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317C1DA27FF9EAB00464C1B /* FruitData.swift */; };
 		D317C1DD27FFB22A00464C1B /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317C1DC27FFB22A00464C1B /* FruitRowView.swift */; };
 		D39617222800C10400A69944 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39617212800C10400A69944 /* FruitDetailView.swift */; };
+		D39E41E42810C9DE008B1BEA /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E41E32810C9DE008B1BEA /* SettingsRowView.swift */; };
+		D3B479AD2810B64300FAB74B /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B479AC2810B64300FAB74B /* SettingsLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		D317C1DA27FF9EAB00464C1B /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		D317C1DC27FFB22A00464C1B /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		D39617212800C10400A69944 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
+		D39E41E32810C9DE008B1BEA /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		D3B479AC2810B64300FAB74B /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 				D317C1D427FF9AB700464C1B /* OnboardingView.swift */,
 				D39617212800C10400A69944 /* FruitDetailView.swift */,
 				D30F5F8C280F849B0035BB88 /* SettingsView.swift */,
+				D39E41E32810C9DE008B1BEA /* SettingsRowView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				D30F5F86280F72ED0035BB88 /* FruitHeaderView.swift */,
 				D30F5F88280F78590035BB88 /* SourceLinkView.swift */,
 				D30F5F8A280F7E810035BB88 /* FruitNutrientsView.swift */,
+				D3B479AC2810B64300FAB74B /* SettingsLabelView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			files = (
 				D317C1DB27FF9EAB00464C1B /* FruitData.swift in Sources */,
 				D30F5F89280F78590035BB88 /* SourceLinkView.swift in Sources */,
+				D39E41E42810C9DE008B1BEA /* SettingsRowView.swift in Sources */,
 				D317C1CF27FF78CE00464C1B /* FruitCardView.swift in Sources */,
 				D317C1DD27FFB22A00464C1B /* FruitRowView.swift in Sources */,
 				D30F5F8B280F7E810035BB88 /* FruitNutrientsView.swift in Sources */,
@@ -212,6 +219,7 @@
 				D317C1C127FF6EB400464C1B /* ContentView.swift in Sources */,
 				D30F5F87280F72ED0035BB88 /* FruitHeaderView.swift in Sources */,
 				D317C1D527FF9AB700464C1B /* OnboardingView.swift in Sources */,
+				D3B479AD2810B64300FAB74B /* SettingsLabelView.swift in Sources */,
 				D317C1D827FF9D4D00464C1B /* FruitModel.swift in Sources */,
 				D317C1BF27FF6EB400464C1B /* FructusApp.swift in Sources */,
 				D30F5F8D280F849B0035BB88 /* SettingsView.swift in Sources */,
@@ -353,7 +361,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +391,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
