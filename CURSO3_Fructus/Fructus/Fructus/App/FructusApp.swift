@@ -3,17 +3,18 @@
 //  Fructus
 //
 //  Created by skynet on 7/4/22.
-//
+//  https://swiftuimasterclass.com
 
 import SwiftUI
 
 @main
 struct FructusApp: App {
-    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+
+    @AppStorage("isOnboardingView")var isOnboardingView: Bool = true
 
     var body: some Scene {
         WindowGroup {
-            if isOnboarding {
+            if isOnboardingView {
                 OnboardingView()
             } else {
                 ContentView()

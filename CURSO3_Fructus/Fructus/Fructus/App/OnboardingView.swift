@@ -3,24 +3,22 @@
 //  Fructus
 //
 //  Created by skynet on 7/4/22.
-//
+//  https://swiftuimasterclass.com
 
 import SwiftUI
+
 
 struct OnboardingView: View {
     // MARK: - PROPERTIES
 
     var fruits: [Fruit] = fruitsData
 
-
     // MARK: - BODY
-
 
     var body: some View {
         TabView {
             ForEach(fruits[0...5]) { item in
                 FruitCardView(fruit: item)
-//                FruitCardView()
             }//: LOOP
         }//: TAB
         .tabViewStyle(PageTabViewStyle())

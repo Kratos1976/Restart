@@ -3,22 +3,21 @@
 //  Fructus
 //
 //  Created by skynet on 7/4/22.
-//
+//  https://swiftuimasterclass.com
 
 import SwiftUI
 
 struct StartButtonView: View {
     // MARK: - PROPERTIES
 
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
-
+    @AppStorage("isOnboardingView") var isOnboardingView: Bool?
 
     // MARK: - BODY
 
 
     var body: some View {
         Button(action: {
-           isOnboarding = false
+           isOnboardingView = false
         }) {
             HStack(spacing: 8) {
                 Text("Start")

@@ -3,7 +3,7 @@
 //  Fructus
 //
 //  Created by skynet on 7/4/22.
-//
+//  https://swiftuimasterclass.com
 
 import SwiftUI
 
@@ -14,8 +14,6 @@ struct FruitCardView: View {
     var fruit: Fruit
 
     @State private var isAnimating: Bool = false
-
-
 
     // MARK: - BODY
 

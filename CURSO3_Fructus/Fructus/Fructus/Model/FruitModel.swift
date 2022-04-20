@@ -3,9 +3,8 @@
 //  Fructus
 //
 //  Created by skynet on 7/4/22.
-//
+//  https://swiftuimasterclass.com
 
-import Foundation
 import SwiftUI
 
 // MARK: - FRUITS DATA MODEL
@@ -18,6 +17,4 @@ struct Fruit: Identifiable {
     var gradientColors: [Color]
     var description: String
     var nutrition: [String]
-    
-
 }
