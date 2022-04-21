@@ -77,6 +77,7 @@
 		D317C1BD27FF6EB400464C1B /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
+				D380D78028120A0900C52AC9 /* ViewModel */,
 				D317C1CC27FF786B00464C1B /* App */,
 				D317C1CD27FF789A00464C1B /* View */,
 				D317C1D927FF9E8800464C1B /* Data */,
@@ -136,6 +137,13 @@
 				D317C1DA27FF9EAB00464C1B /* FruitData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		D380D78028120A0900C52AC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

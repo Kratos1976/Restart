@@ -12,6 +12,8 @@ struct ContentView: View {
     // MARK: - PROPERTIES
 
     @State private var isShowingSettings: Bool = false
+    @State private var isOnboarding: Bool = false
+
 
     var fruits: [Fruit] = fruitsData
 
@@ -38,8 +40,23 @@ struct ContentView: View {
                 }) {
                     Image(systemName: "slider.horizontal.3")
                 } //: BUTTON
+                    .sheet(isPresented: $isShowingSettings) {
+                        SettingsView()
+                    }
+            )
+                .navigationBarItems(
+                leading:
+                    Button(action: {
+                    isOnboarding = true
+                }) {
+                    Image(systemName: "arrow.left")
+                } //: BUTTON
+                    .sheet(isPresented: $isOnboarding) {
+                        OnboardingView()
+                    }
             )
         }//: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
